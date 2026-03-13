@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Daniel Sowa</title>
+</head>
+<body>
+    <div>
+
+        <!-- Boot Sequence -->
+        <section id="boot-section">
+            <div class="container">
+                <div class="window">
+                    <div class="boot-content">
+                        <div id="boot-sequence"></div>
+                        <span class="cursor-blink">█</span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Section: Main Menu -->
+        <section id="menu-section">
+            <div class="container">
+                
+                <!-- Title -->
+                 <div class="section-title">
+                    <div class="text-bright-yellow title-name">
+                        ▓▒░ DANIEL SOWA ░▒▓
+                    </div>
+                    <div class="text-bright-magenta title-role">
+                        SOFTWARE DEVELOPER
+                    </div>
+                    <div class="text-bright-white">
+                        ════════════════════════════════════
+                    </div>
+                </div>
+
+                <!-- Menu List -->
+                <div class="sub-window">
+                    <div class="sub-window-title"> [ MENU ITEMS ] </div>
+                    <div class="menu-list">
+
+                        <!-- Menu Items -->
+                         <button class="menu-item" data-section="about-section">
+                            <span class="number">[1]</span>
+                            <div class="content">
+                                <p class="title">ABOUT</p>
+                                <p class="desc">Education & background</p>
+                            </div>
+                            <span class="arrow">◄</span>
+                        </button>
+
+                        <button class="menu-item" data-section="projects-section">
+                            <span class="number">[2]</span>
+                            <div class="content">
+                                <p class="title">PROJECTS</p>
+                                <p class="desc">Engines, games, and systems</p>
+                            </div>
+                            <span class="arrow">◄</span>
+                        </button>
+
+                        <button class="menu-item" data-section="skills-section">
+                            <span class="number">[3]</span>
+                            <div class="content">
+                                <p class="title">SKILLS</p>
+                                <p class="desc">Languages, frameworks, & tech</p>
+                            </div>
+                            <span class="arrow">◄</span>
+                        </button>
+
+                        <button class="menu-item" data-section="contact-section">
+                            <span class="number">[4]</span>
+                            <div class="content">
+                                <p class="title">CONTACT</p>
+                                <p class="desc">Links & communication</p>
+                            </div>
+                            <span class="arrow">◄</span>
+                        </button>
+
+                    </div>
+                </div>
+                
+                <!-- Instructions -->
+                <div class="section-footer instructions">
+                    <div class="text-white">Use <span class="text-bright-cyan">↑/↓ ARROW KEYS</span> or <span class="text-bright-cyan">MOUSE</span> to select</div>
+                    <div class="text-white">Press <span class="text-bright-green">ENTER</span> or <span class="text-bright-green">NUMBER KEY</span> to navigate</div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Section: About -->
+        <section id="about-section">
+            <div class="container-wide">
+                
+                <div class="section-title">
+                    <div class="text-bright-yellow title-name">
+                        ▓▒░ ABOUT ME ░▒▓
+                    </div>
+                    <div class="text-bright-magenta title-role">
+                        DEVELOPER PROFILE AND BACKGROUND INFO
+                    </div>
+                    <div class="text-bright-white">
+                        ════════════════════════════════════
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="sub-window mt-0">
+                        <div class="sub-window-title text-bright-yellow"> [1.1] BIO.TXT </div>
+                        <div class="text-bright-white bio-content">
+                            <p>
+                                I am a Software Developer and current Honours Bachelor of Computer Science student at <span class="text-bright-magenta">Sheridan College</span>, specializing in <span class="text-bright-green">Game Engineering</span>.
+                            </p>
+                            <p>
+                                <span class="text-bright-cyan">▸ THE FOCUS: </span> I specialize in creating and maintaining software across multiple environments using C, C++, C#, Java, and Python. I have deep interests in under-the-hood systems, building game engines from scratch, and writing rendering software with OpenGL and HLSL shaders.
+                            </p>
+                            <p>
+                                Beyond pure game development, I am well-versed in desktop frameworks like .NET Maui and Tkinter, as well as web-focused technologies like ASP.NET, Spring Boot, and AngularJS. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-details-grid">
+                        <div class="sub-window mt-0">
+                            <div class="sub-window-title text-bright-yellow"> [1.2] EDUCATION.DAT </div>
+                            <div class="education-content">
+                                <div>
+                                    <div class="text-bright-green">▸ SHERIDAN COLLEGE</div>
+                                    <div class="text-bright-white">Oakville, Ontario</div>
+                                    <div class="text-bright-cyan mt-0-5">Honours Bachelor of Computer Science</div>
+                                    <div class="text-bright-yellow">Specialized in Game Engineering</div>
+                                    <div class="text-bright-magenta mt-0-5">Expected Graduation: May 2027</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-window mt-0">
+                            <div class="sub-window-title text-bright-yellow"> [1.3] CORE_TRAITS.DAT </div>
+                            <div class="traits-content">
+                                <div>
+                                    <div class="text-bright-green">▸ SYSTEMS ARCHITECT</div>
+                                    <div class="text-bright-white">Building modular, data-driven engines from scratch</div>
+                                </div>
+                                <div>
+                                    <div class="text-bright-green">▸ FULL-STACK CAPABLE</div>
+                                    <div class="text-bright-white">From HLSL shaders to Spring Boot backends</div>
+                                </div>
+                                <div>
+                                    <div class="text-bright-green">▸ HARDWARE ENTHUSIAST</div>
+                                    <div class="text-bright-white">Experience in computer building and embedded circuits</div>
+                                </div>
+                                <div>
+                                    <div class="text-bright-green">▸ ORGANIZED & EFFICIENT</div>
+                                    <div class="text-bright-white">Strong time management and problem resolution skills</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-window mt-0">
+                        <div class="sub-window-title text-bright-yellow"> [1.4] EXPERIENCE_LOG.TXT </div>
+                        <div class="timeline-content">
+                            <div>
+                                <div><span class="text-bright-yellow">MAY 2025 - PRESENT</span> | <span class="text-bright-magenta">ENGINE DEVELOPER (PYBOX)</span></div>
+                                <div class="text-bright-white">Developing a custom 2D Python game engine. Transitioned from strict OOP to a modular ECS architecture using JSON data files.</div>
+                            </div>
+                            <div>
+                                <div><span class="text-bright-yellow">OCT 2022 - PRESENT</span> | <span class="text-bright-magenta">WAREHOUSE ASSOCIATE (CANADIAN TIRE)</span></div>
+                                <div class="text-bright-white">Managing a large warehouse with digital tools. Organizing over $12+ million in product, creating layout plans, and operating forklifts.</div>
+                            </div>
+                            <div>
+                                <div><span class="text-bright-yellow">SEP 2019 - JUN 2023</span> | <span class="text-bright-magenta">ROBOTICS TEAM (BLESSED TRINITY)</span></div>
+                                <div class="text-bright-white">Programmed control software for embedded circuits and designed autonomous routines for a 5-time award winning robotics team.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer instructions">
+                    <div class="text-white">Press <span class="text-bright-yellow">[ESC]</span> to return to Main Menu</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Projects -->
+        <section id="projects-section">
+            <div class="container">
+                
+                <div class="section-title">
+                    <div class="text-bright-yellow title-name">
+                        ▓▒░ PROJECTS FILE AREA ░▒▓
+                    </div>
+                    <div class="text-bright-magenta title-role">
+                        SYSTEM ARCHITECTURES AND DEVELOPMENTS
+                    </div>
+                    <div class="text-bright-white">
+                        ════════════════════════════════════
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="sub-window mt-0 project-card">
+                        <div class="sub-window-title"> [2.1] PYBOX ENGINE </div>
+                        <div class="project-content">
+                            <div class="text-bright-yellow text-center project-status">▓ IN DEV (MAY 2025 - PRESENT) ▓</div>
+                            <div class="text-bright-white project-desc">
+                                A personal, data-driven 2D game engine written in Python 3.13. Utilizes an Entity Component System (ECS) architecture alongside OOP to handle dynamic data via custom binary files. Built with robust optimizations and community mod support.
+                            </div>
+                            <div>
+                                <div class="text-bright-cyan">TECH & TAGS:</div>
+                                <div class="project-tags">
+                                    <span class="project-tag">#PYTHON</span>
+                                    <span class="project-tag">#ENGINE</span>
+                                    <span class="project-tag">#YOLO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-action">
+                            <a href="https://github.com/RebelSnowStorm" target="_blank" class="submit-btn">[ ENTER ] VIEW PROJECT</a>
+                        </div>
+                    </div>
+
+                    <div class="sub-window mt-0 project-card">
+                        <div class="sub-window-title"> [2.2] SCRIBBLE CARDS </div>
+                        <div class="project-content">
+                            <div class="text-bright-yellow text-center project-status">▓ PLANNED ▓</div>
+                            <div class="text-bright-white project-desc">
+                                Casual card game with scribbled drawing graphics. A calm experience hiding something dark and sinister deep within the code. Offering both real life card games and a custom poker variant.
+                            </div>
+                            <div>
+                                <div class="text-bright-cyan">TECH & TAGS:</div>
+                                <div class="project-tags">
+                                    <span class="project-tag">#GAME</span>
+                                    <span class="project-tag">#UNITY</span>
+                                    <span class="project-tag">#CASUAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-action">
+                            <p class="submit-btn">▓ COMING SOON ▓</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title text-bright-yellow mt-1">
+                    ════════════════════════════════════<br>
+                    ▓ MORE PROJECTS COMING SOON ▓
+                </div>
+
+                <div class="section-footer instructions">
+                    <div class="text-white">Press <span class="text-bright-yellow">[ESC]</span> to return to Main Menu</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Skills -->
+        <section id="skills-section">
+            <div class="container-wide">
+
+                <div class="section-title">
+                    <div class="text-bright-yellow title-name">
+                        ▓▒░ SKILL MATRIX ░▒▓
+                    </div>
+                    <div class="text-bright-magenta title-role">
+                        LANGUAGES, FRAMEWORKS, AND ARCHITECTURES
+                    </div>
+                    <div class="text-bright-white">
+                        ════════════════════════════════════
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    
+                    <div class="sub-window mt-0">
+                        <div class="sub-window-title text-bright-magenta"> [3.1] TECHNICAL_INVENTORY.DAT </div>
+                        <div class="skill-category">
+                            
+                            <div>
+                                <div class="text-bright-yellow">▸ PROGRAMMING_LANGUAGES</div>
+                                <div class="text-bright-white skill-list-text">
+                                    <span class="text-bright-green">Python</span> | <span class="text-bright-green">C / C++</span> | <span class="text-bright-green">C#</span> | <span class="text-bright-green">Java</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-yellow">▸ GRAPHICS & ENGINES</div>
+                                <div class="text-bright-white skill-list-text">
+                                    <span class="text-bright-cyan">Unity</span> | <span class="text-bright-cyan">OpenGL</span> | Pygame | Unreal Engine | HLSL/GLSL
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-yellow">▸ WEB & BACKEND_FRAMEWORKS</div>
+                                <div class="text-bright-white skill-list-text">
+                                    <span class="text-bright-magenta">ASP.NET Core</span> | <span class="text-bright-magenta">Spring Boot</span> | AngularJS
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-yellow">▸ DESKTOP & UI</div>
+                                <div class="text-bright-white skill-list-text">
+                                    <span class="text-bright-magenta">.NET Maui</span> | Tkinter | HTML5 / CSS / JS
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-yellow">▸ DATABASES & TOOLS</div>
+                                <div class="text-bright-white skill-list-text">
+                                    SQL | Git | Embedded Circuits | Hardware Config
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sub-window mt-0">
+                        <div class="sub-window-title text-bright-magenta"> [3.2] APPLIED_DOMAINS.TXT </div>
+                        <div class="skill-category">
+                            
+                            <div>
+                                <div class="text-bright-green">▸ ENGINES & ARCHITECTURE</div>
+                                <div class="text-bright-white skill-domain-text">
+                                    Extensive development in Unity alongside exploration of Unreal Engine. Also experienced in designing custom data-driven engines from scratch (OOP to ECS).
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-green">▸ GRAPHICS PROGRAMMING</div>
+                                <div class="text-bright-white skill-domain-text">
+                                    Developing low-level rendering pipelines utilizing OpenGL, GLFW, and custom HLSL/GLSL shaders to achieve specific visual aesthetics.
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-green">▸ FULL-STACK SOFTWARE</div>
+                                <div class="text-bright-white skill-domain-text">
+                                    Building end-to-end applications, from desktop GUIs (.NET Maui, Tkinter) to web-focused backend APIs (ASP.NET, Spring Boot) with SQL database management.
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-bright-green">▸ HARDWARE & SYSTEMS</div>
+                                <div class="text-bright-white skill-domain-text">
+                                    Deep understanding of hardware interaction, from custom PC building and deployment to programming control software for embedded circuits.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-footer instructions">
+                    <div class="text-white">Press <span class="text-bright-yellow">[ESC]</span> to return to Main Menu</div>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <!-- Section: Contact -->
+        <section id="contact-section">
+            <div class="container-wide">
+                
+                <div class="section-title">
+                    <div class="text-bright-yellow title-name">
+                        ▓▒░ MESSAGE CENTER ░▒▓
+                    </div>
+                    <div class="text-bright-magenta title-role">
+                        SEND A MESSAGE OR CONNECT VIA SOCIALS
+                    </div>
+                    <div class="text-bright-white">
+                        ════════════════════════════════════
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="sub-window mt-0">
+                        <div class="sub-window-title"> [4.0] SEND MESSAGE </div>
+                        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); document.getElementById('error-modal').style.display='flex';">
+                            <div class="form-group">
+                                <label for="name" class="text-bright-cyan">▸ ENTER YOUR NAME:</label>
+                                <input type="text" id="name" name="name" required class="input-field" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-bright-cyan">▸ ENTER YOUR EMAIL:</label>
+                                <input type="email" id="email" name="email" required class="input-field" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="text-bright-cyan">▸ ENTER YOUR MESSAGE:</label>
+                                <textarea id="message" name="message" required rows="5" class="input-field"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                [ENTER] SEND MESSAGE
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="sub-window mt-0">
+                            <div class="sub-window-title"> [4.1] SOCIAL NETWORKS & FILES </div>
+                            <div class="menu-list mt-0-5">
+                                <a href="resume.pdf" download="Daniel_Sowa_Resume.pdf" target="_blank" class="contact-link">
+                                    <span class="number">[1]</span>
+                                    <div class="content">
+                                        <p class="title text-bright-green">RESUME.PDF</p>
+                                        <p class="desc text-bright-cyan">Download my full resume</p>
+                                    </div>
+                                    <span class="arrow">◄</span>
+                                </a>
+                                <a href="https://github.com/RebelSnowStorm" target="_blank" class="contact-link">
+                                    <span class="number">[2]</span>
+                                    <div class="content">
+                                        <p class="title text-bright-magenta">GITHUB</p>
+                                        <p class="desc text-bright-cyan">github.com/RebelSnowStorm</p>
+                                    </div>
+                                    <span class="arrow">◄</span>
+                                </a>
+                                <a href="https://linkedin.com/in/danielsowad" target="_blank" class="contact-link">
+                                    <span class="number">[3]</span>
+                                    <div class="content">
+                                        <p class="title text-bright-magenta">LINKEDIN</p>
+                                        <p class="desc text-bright-cyan">linkedin.com/in/danielsowad</p>
+                                    </div>
+                                    <span class="arrow">◄</span>
+                                </a>
+                                <a href="mailto:sowad@sheridancollege.ca" class="contact-link">
+                                    <span class="number">[4]</span>
+                                    <div class="content">
+                                        <p class="title text-bright-magenta">EMAIL</p>
+                                        <p class="desc text-bright-cyan">danielsowad@gmail.ca</p>
+                                    </div>
+                                    <span class="arrow">◄</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sub-window mt-0">
+                            <div class="sub-window-title"> [4.2] CONTACT INFO </div>
+                            <div class="info-list">
+                                <div>
+                                    <span class="text-bright-cyan">▸ LOCATION:</span>
+                                    <span class="text-bright-white">GRIMSBY, ONTARIO</span>
+                                </div>
+                                <div>
+                                    <span class="text-bright-cyan">▸ PHONE:</span>
+                                    <span class="text-bright-white">289-455-3594</span>
+                                </div>
+                                <div>
+                                    <span class="text-bright-cyan">▸ AVAILABILITY:</span>
+                                    <span class="text-bright-green">● OPEN TO OPPORTUNITIES</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <div class="section-footer-line text-bright-white">═══════════════════════════════════════════════════</div>
+                    <div class="text-bright-yellow">▓▒░ DANIEL SOWA © 2026 ░▒▓</div>
+                    <div class="text-bright-yellow">HTML | CSS | JAVASCRIPT</div>
+                    <div class="section-footer-line text-bright-white">═══════════════════════════════════════════════════</div>
+                    <div class="instructions mt-1">
+                        <div class="text-white">Press <span class="text-bright-yellow">[ESC]</span> to return to Main Menu</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+    <!-- Random experimental crap -->
+    <!--
+    <div id="global-timer" style="display: none;">
+        [ NODE: 1 | TIME ONLINE: <span id="time-online" class="text-bright-green">00:00:00</span> ]
+    </div>
+    -->
+
+
+    <div id="error-modal" class="modal-overlay" style="display: none;">
+        <div class="window error-window">
+            <div class="window-title error-window-title"> [ SYSTEM ERROR ] </div>
+            <div class="window-content error-content-box">
+                <div class="text-bright-red error-heading">
+                    ▓ ERROR 503: SMTP SERVER UNREACHABLE ▓
+                </div>
+                <div class="text-bright-yellow error-message">
+                    Please use direct email or LinkedIn to establish connection.
+                </div>
+                <button class="submit-btn error-btn" onclick="document.getElementById('error-modal').style.display='none';">
+                    [ OK ]
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
