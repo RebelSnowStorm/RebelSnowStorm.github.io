@@ -34,7 +34,7 @@ function runBootSequence()
         }
         else {
             setTimeout(() => {
-                navigateToSection("menu-section");
+                navigateToSection("menu-section", true, true);
             }, 1000);
         }
     }
@@ -44,18 +44,39 @@ function runBootSequence()
 
 
 // Section Navigation
-function navigateToSection(sectionID)
+function navigateToSection(sectionID, saveToHistory = true, replaceHistory = false)
 {
+    const targetSection = document.getElementById(sectionID);
+
+    if (!targetSection)
+    {
+        return;
+    }
+
     document.querySelectorAll("section").forEach(section => {
         section.classList.remove("active");
     });
 
-    const targetSection = document.getElementById(sectionID);
+    targetSection.classList.add("active");
+    currentSection = sectionID;
 
-    if (targetSection)
+    // Shoutout to _nullreferenceexception_ for adding the ability to track the visible section in the URL
+    // Made the site way more user friendly, and stops the issue of exiting the site when trying to go back
+    // Thanks browski <3
+
+    if (saveToHistory)
     {
-        targetSection.classList.add("active");
-        currentSection = sectionID;
+        const state = { sectionID };
+        const url = `#${sectionID}`;
+
+        if (replaceHistory)
+        {
+            window.history.replaceState(state, "", url);
+        }
+        else if (window.history.state?.sectionID !== sectionID)
+        {
+            window.history.pushState(state, "", url);
+        }
     }
 }
 
@@ -103,12 +124,10 @@ function initKeyboardControls()
             return;
         }
 
-        // 2. Early Return Guard: If we aren't in the menu, ignore all other keys
         if (currentSection !== "menu-section") return;
         
         console.log(e.key);
 
-        // 3. Handle specific menu keys cleanly
         switch (e.key)
         {
             
@@ -146,6 +165,19 @@ function initKeyboardControls()
 // Initialization
 initMainMenu();
 
-navigateToSection("boot-section");
+window.addEventListener("popstate", (event) => {
+    const sectionID = event.state?.sectionID || window.location.hash.slice(1) || "menu-section";
+    navigateToSection(sectionID, false);
+});
 
-runBootSequence();
+const initialSection = window.location.hash.slice(1);
+
+if (initialSection && initialSection !== "boot-section" && document.getElementById(initialSection))
+{
+    navigateToSection(initialSection, true, true);
+}
+else
+{
+    navigateToSection("boot-section", true, true);
+    runBootSequence();
+}
